@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-# Python OOP
+"""Write an empty class Square"""
 
 
 class Square:
-    # Defining a class
     pass
