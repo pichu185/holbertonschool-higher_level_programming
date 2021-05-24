@@ -3,5 +3,5 @@
 
 
 class Rectangle:
-    """rectangle"""
+    """empty rectangle class"""
     pass
