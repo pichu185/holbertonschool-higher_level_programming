@@ -10,7 +10,7 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
-    
+
     @property
     def width(self):
         return self.__width
