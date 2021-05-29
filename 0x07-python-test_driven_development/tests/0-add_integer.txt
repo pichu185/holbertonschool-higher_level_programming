@@ -12,6 +12,12 @@
 >>> add_integer(2,)
 100
 
+>>> add_integer(-7, -7)
+-14
+
+>>> add_integer(100, -2)
+98
+
 ----------------------------------------------------------------------
 
 >>> add_integer()
@@ -48,3 +54,15 @@ TypeError: a must be an integer
 
 >>> add_integer(7.7, 8)
 15
+
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(float('-inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
