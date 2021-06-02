@@ -10,6 +10,4 @@ def write_file(filename="", text=""):
 
     with open(filename, mode="w", encoding="utf-8") as file:
 
-        file.write("Holberton School is so cool!\n")
-
         return file.write(text)
