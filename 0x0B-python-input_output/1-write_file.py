@@ -1,9 +1,15 @@
 #!/usr/bin/python3
+"""Write a function that writes a string to a
+text file (UTF8) and returns the number of
+characters written
+"""
+
 
 def write_file(filename="", text=""):
-    with open("my_first_file.txt", mode="w", encoding="utf-8") as file:
+    """writes a string"""
+
+    with open(filename, mode="w", encoding="utf-8") as file:
 
         file.write("Holberton School is so cool!\n")
         
-        for i in file:
-            print i+=
+        return file.write(text)
