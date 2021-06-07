@@ -40,7 +40,7 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         else:
             self.__width = value
-    
+
     @height.setter
     def height(self, value):
         if type(value) is not int:
@@ -49,7 +49,7 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         else:
             self.__height = value
-    
+
     @x.setter
     def x(self, value):
         if type(value) is not int:
