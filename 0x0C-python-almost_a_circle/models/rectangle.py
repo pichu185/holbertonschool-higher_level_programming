@@ -101,11 +101,12 @@ class Rectangle(Base):
         """public method that prints in stdout the
         Rectangle instance with the character #
         """
-        string = ""
-        if self.__height == 0 or self.__width == 0:
-            return ""
+        for y in range(self.__y):
+            print("")
         for i in range(self.__height):
+            for z in range(self.__x):
+                print(" ", end="")
             for j in range(self.__width):
-                string += "#"
-            string += "\n"
-        return string[:-1]
+                print("#", end="")
+            print("") 
+            
