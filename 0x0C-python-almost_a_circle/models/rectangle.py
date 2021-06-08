@@ -18,22 +18,27 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """width method"""
         return self.__width
 
     @property
     def height(self):
+        """heigth method"""
         return self.__height
 
     @property
     def x(self):
+        """x method"""
         return self.__x
 
     @property
     def y(self):
+        """y method"""
         return self.__y
 
     @width.setter
     def width(self, value):
+        """width method"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -43,6 +48,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        """heigth method"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -52,6 +58,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        """x method"""
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -61,6 +68,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
+        """y method"""
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
