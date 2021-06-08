@@ -17,30 +17,35 @@ class Rectangle(Base):
         self.y = y
 
     """hola Duglas"""
+
     @property
     def width(self):
         """width method"""
         return self.__width
 
     """hola Duglas"""
+
     @property
     def height(self):
         """heigth method"""
         return self.__height
 
     """hola Duglas"""
+
     @property
     def x(self):
         """x method"""
         return self.__x
 
     """hola Duglas"""
+
     @property
     def y(self):
         """y method"""
         return self.__y
 
     """hola Duglas"""
+
     @width.setter
     def width(self, value):
         """width method"""
@@ -52,6 +57,7 @@ class Rectangle(Base):
             self.__width = value
 
     """hola Duglas"""
+
     @height.setter
     def height(self, value):
         """heigth method"""
@@ -63,6 +69,7 @@ class Rectangle(Base):
             self.__height = value
 
     """hola Duglas"""
+
     @x.setter
     def x(self, value):
         """x method"""
@@ -74,6 +81,7 @@ class Rectangle(Base):
             self.__x = value
 
     """hola Duglas"""
+    
     @y.setter
     def y(self, value):
         """y method"""
