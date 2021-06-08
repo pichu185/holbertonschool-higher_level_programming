@@ -81,7 +81,7 @@ class Rectangle(Base):
             self.__x = value
 
     """hola Duglas"""
-    
+
     @y.setter
     def y(self, value):
         """y method"""
