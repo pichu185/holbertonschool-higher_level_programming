@@ -2,7 +2,7 @@
 """Write the class Rectangle that inherits from Base"""
 
 
-from base import Base
+from .base import Base
 
 
 class Rectangle(Base):
@@ -72,4 +72,3 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        
