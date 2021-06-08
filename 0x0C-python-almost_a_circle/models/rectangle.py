@@ -117,7 +117,7 @@ class Rectangle(Base):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
                                                         self.__y, self.__width,
                                                         self.__height))
-    
+
     def update(self, *args):
         """public method that assigns an argument to each attribute:
         1st argument should be the id attribute
