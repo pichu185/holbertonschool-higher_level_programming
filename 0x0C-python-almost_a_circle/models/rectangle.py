@@ -118,7 +118,7 @@ class Rectangle(Base):
                                                         self.__y, self.__width,
                                                         self.__height))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """public method that assigns an argument to each attribute:
         1st argument should be the id attribute
         2nd argument should be the width attribute
@@ -136,3 +136,7 @@ class Rectangle(Base):
                 self.__x = args[3]
             if len(args) > 4:
                 self.__y = args[4]
+        else:
+            if kwargs is not None:
+                for key, value in kwargs.items():
+                    setattr(self, key, value)
