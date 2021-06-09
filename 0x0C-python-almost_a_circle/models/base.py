@@ -27,11 +27,11 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
 
-    @classmethod
+    """@classmethod
     def save_to_file(cls, list_objs):
         """class method that writes the JSON string representation
         of list_objs to a file:
         """
         
         with open(filename, mode="w", encoding="utf-8") as file:
-            
+    """
