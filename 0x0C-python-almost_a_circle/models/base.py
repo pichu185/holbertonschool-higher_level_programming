@@ -19,7 +19,6 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
-
     @staticmethod
     def to_json_string(list_dictionaries):
         """returns the JSON string representation of list_dictionaries"""
@@ -31,8 +30,7 @@ class Base:
     def save_to_file(cls, list_objs):
         class method that writes the JSON string representation
         of list_objs to a file:
-        
-        
+
         with open(filename, mode="w", encoding="utf-8") as file:
     """
 
