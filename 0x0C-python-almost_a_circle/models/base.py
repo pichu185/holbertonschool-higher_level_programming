@@ -29,9 +29,9 @@ class Base:
 
     """@classmethod
     def save_to_file(cls, list_objs):
-        """class method that writes the JSON string representation
+        class method that writes the JSON string representation
         of list_objs to a file:
-        """
+        
         
         with open(filename, mode="w", encoding="utf-8") as file:
     """
