@@ -6,7 +6,7 @@
 -- The database name will be passed as an argument to the mysql command
 -- In this example, new data have been added to the table second_table.
 
-SELECT score AND name
+SELECT score, name
 FROM second_table
-WHERE name IS NOT ""
+WHERE name != ""
 ORDER BY score DESC;
