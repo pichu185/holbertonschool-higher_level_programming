@@ -1,4 +1,5 @@
 #!/usr/bin/node
+require('process');
 const argv = process.argv[2];
 if (!argv) {
 	console.log('No argument');
