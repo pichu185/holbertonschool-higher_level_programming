@@ -1,7 +1,6 @@
-#!/usr/bin/node
-require('arg');
-const length = arg.argv.length;
-
+#!/usr/bin / node
+require('process');
+const length = process.argv.length;
 if (length === 2) {
         console.log('No argument');
 } else if (length === 3) {
