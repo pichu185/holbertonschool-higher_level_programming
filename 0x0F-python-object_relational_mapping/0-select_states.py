@@ -13,11 +13,12 @@ from sys import argv
 import MySQLdb
 
 if __name__ == "__main__":
-    db = MySQLdb.connect('localhost', argv[1], argv[2], argv[3], 3306)
+    db = MySQLdb.connect(host="localhost", user=argv[1],
+                              passwd=argv[2], db=argv[3], port=3306,
+                              charset="utf8")
     cursor = db.cursor()
-    sql = "SELECT * FROM states ORDER BY id"
-    cursor.execute(sql)
-    results = cursor.fetchall()
-    for row in results:
+    cursor.execute("SELECT * FROM states ORDER BY id")
+    querry = cursor.fetchall()
+    for row in querry:
         print(row)
     db.close()
