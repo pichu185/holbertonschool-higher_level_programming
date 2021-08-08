@@ -2,7 +2,7 @@
 """
 Write a script that lists all states with a name starting with N
 (upper N) from the database hbtn_0e_0_usa:
-- Your script should take 3 arguments: mysql username, mysql 
+- Your script should take 3 arguments: mysql username, mysql
 password and database name (no argument validation needed)
 - You must use the module MySQLdb (import MySQLdb)
 - Your script should connect to a MySQL server running on
@@ -17,12 +17,12 @@ import MySQLdb
 
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", user=argv[1],
-                              passwd=argv[2], db=argv[3], port=3306,
-                              charset="utf8")
-	cursor = db.cursor()
-	cursor.execute("SELECT * FROM states ORDER BY id")
-	querry = cursor.fetchall()
-	for row in querry:
-		if row[1][0] == 'N':
-			print(row)
-	db.close()
+                         passwd=argv[2], db=argv[3], port=3306,
+                         charset="utf8")
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM states ORDER BY id")
+    querry = cursor.fetchall()
+    for row in querry:
+	if row[1][0] == 'N':
+            print(row)
+    db.close()
