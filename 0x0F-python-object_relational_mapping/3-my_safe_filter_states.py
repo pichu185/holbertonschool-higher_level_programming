@@ -14,3 +14,15 @@ database name and state name searched (safe from MySQL injection)
 
 from sys import argv
 import MySQLdb
+
+if __name__ == "__main__":
+    db = MySQLdb.connect(host="localhost", user=argv[1],
+                              passwd=argv[2], db=argv[3], port=3306,
+                              charset="utf8")
+	cursor = db.cursor()
+	cursor.execute("SELECT * FROM states WHERE name = %s", (argv[4]))
+	querry = cursor.fetchall()
+	for row in querry:
+		if row[1] == argv[4]:
+			print(row)
+	db.close()
