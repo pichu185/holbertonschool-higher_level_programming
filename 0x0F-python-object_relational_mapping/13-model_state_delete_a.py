@@ -7,7 +7,7 @@ the letter a from the database hbtn_0e_6_usa
 - You must use the module SQLAlchemy
 - You must import State and Base from model_state - from model_state
 import Base, State
-- Your script should connect to a MySQL server running on localhost 
+- Your script should connect to a MySQL server running on localhost
 at port 3306
 - Your code should not be executed when imported
 """
