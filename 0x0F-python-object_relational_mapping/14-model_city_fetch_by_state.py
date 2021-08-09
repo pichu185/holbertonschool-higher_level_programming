@@ -5,11 +5,11 @@ contains the class definition of a City.
 City class:
 - inherits from Base (imported from model_state)
 - links to the MySQL table cities
-- class attribute id that represents a column of an auto-generated, 
+- class attribute id that represents a column of an auto-generated,
 unique integer, can’t be null and is a primary key
-- class attribute name that represents a column of a string of 128 
+- class attribute name that represents a column of a string of 128
 characters and can’t be null
-- class attribute state_id that represents a column of an integer, 
+- class attribute state_id that represents a column of an integer,
 can’t be null and is a foreign key to states.id
 - You must use the module SQLAlchemy
 Next, write a script 14-model_city_fetch_by_state.py that prints all
@@ -18,7 +18,7 @@ Next, write a script 14-model_city_fetch_by_state.py that prints all
 - Your script should take 3 arguments: mysql username, mysql password
  and database name
 - You must use the module SQLAlchemy
-- You must import State and Base from model_state - from model_state 
+- You must import State and Base from model_state - from model_state
 import Base, State
 - Your script should connect to a MySQL server running on localhost
  at port 3306
@@ -43,4 +43,3 @@ if __name__ == "__main__":
                                 City).filter(State.id == City.state_id).all():
         print('{}: ({}) {}'.format(st.name, ci.id, ci.name))
     session.close()
-    
