@@ -6,25 +6,20 @@ State class:
 - inherits from Base Tips
 - links to the MySQL table states
 - class attribute id that represents a column of an auto-generated,
-unique integer, can’t be null and is a primary key
+unique integer, t be null and is a primary key
 - class attribute name that represents a column of a string with maximum
-128 characters and can’t be null
+128 characters and t be null
 You must use the module SQLAlchemy
 Your script should connect to a MySQL server running on localhost at port 3306
 WARNING: all classes who inherit from Base must be imported before
 calling Base.metadata.create_all(engine)
 """
 
-import sqlalchemy
-from sqlalchemy.ext.declarative import declarative_base
+import sys
+from model_state import Base
+from sqlalchemy import create_engine
 
-Base = declarative_base()
-
-
-class State(Base):
-    '''Inherit from base'''
-    __tablename__ = 'states'
-    id = sqlalchemy.Column(
-        sqlalchemy.Integer, primary_key=True, nullable=False
-        )
-    name = sqlalchemy.Column(sqlalchemy.String(128), nullable=False)
+if __name__ == "__main__":
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
+        sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
+    Base.metadata.create_all(engine)cancan
