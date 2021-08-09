@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Write a script that prints the State object with the name passed as 
+Write a script that prints the State object with the name passed as
 argument from the database hbtn_0e_6_usa
 - Your script should take 4 arguments: mysql username, mysql password,
  database name and state name to search (SQL injection free)
