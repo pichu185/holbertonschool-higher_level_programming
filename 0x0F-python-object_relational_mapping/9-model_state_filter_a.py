@@ -2,7 +2,7 @@
 """
 Write a script that lists all State objects that contain the
 letter a from the database hbtn_0e_6_usa
-- Your script should take 3 arguments: mysql username, mysql 
+- Your script should take 3 arguments: mysql username, mysql
 password and database name
 - You must use the module SQLAlchemy
 - You must import State and Base from model_state - from model_state
