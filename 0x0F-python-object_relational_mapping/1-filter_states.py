@@ -23,6 +23,6 @@ if __name__ == "__main__":
     cursor.execute("SELECT * FROM states ORDER BY id")
     querry = cursor.fetchall()
     for row in querry:
-	if row[1][0] == 'N':
+        if row[1][0] == "N":
             print(row)
     db.close()
