@@ -8,9 +8,9 @@ request(url, function (err, res, body) {
     const films = JSON.parse(body).results;
     let pichu = 0;
     for (const film in films) {
-      const chts = films[film].chts;
-      for (const char in chts) {
-        if (chts[char].includes('18')) {
+      const characters = films[film].characters;
+      for (const char in characters) {
+        if (characters[char].includes('18')) {
           pichu++;
         }
       }
